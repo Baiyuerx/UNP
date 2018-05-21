@@ -1,0 +1,8 @@
+CC = gcc
+CFLAGS = -I../lib -g -O2 -Wall
+LIBS = ../libunp.a -lpthread
+
+LIBUNP_NAME = ../libunp.a
+LIBS_OBJ = error.o readline.o wraplib.o wrapsock.o wrapunix.o writen.o wrapstdio.o str_echo.o signal.o dg_echo.o dg_cli.o str_cli.o
+
+CLEARFILES = core core.* *.core *.o temp.* *.out *.lc *.lh
